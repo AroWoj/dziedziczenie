@@ -1,0 +1,3 @@
+interface IComputer {
+    String getName();
+}
