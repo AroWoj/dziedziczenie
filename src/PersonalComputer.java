@@ -1,4 +1,4 @@
-public class PersonalComputer extends MainBoard implements IComputer {
+public class PersonalComputer extends MainBoard implements IComputer, IGraphicalCard {
 
     @Override
     public String getName() {
@@ -8,5 +8,10 @@ public class PersonalComputer extends MainBoard implements IComputer {
     @Override
     public String getProcessorType() {
         return "Intel i7 CPU x64 Family";
+    }
+
+    @Override
+    public String getGraphicsCard() {
+        return "NVidia 1GB RAM Pro";
     }
 }
