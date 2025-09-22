@@ -2,6 +2,9 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.println((new PersonalComputer().getName()));
+        PersonalComputer pc = new PersonalComputer();
+        System.out.println(pc.getName());
+        System.out.println(pc.getProcessorType());
+        System.out.println(pc.getMemoryCapacity());
     }
 }

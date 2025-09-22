@@ -1,7 +1,12 @@
-public class PersonalComputer implements IComputer {
+public class PersonalComputer extends MainBoard implements IComputer {
 
     @Override
     public String getName() {
-        return "MyComputer";
+        return "Personal Computer";
+    }
+
+    @Override
+    public String getProcessorType() {
+        return "Intel i7 CPU x64 Family";
     }
 }
