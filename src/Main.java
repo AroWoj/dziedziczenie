@@ -6,5 +6,6 @@ public class Main {
         System.out.println(pc.getName());
         System.out.println(pc.getProcessorType());
         System.out.println(pc.getMemoryCapacity());
+        System.out.println(pc.getGraphicsCard());
     }
 }
