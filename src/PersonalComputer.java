@@ -1,8 +1,12 @@
 public class PersonalComputer extends MainBoard implements IComputer, IGraphicalCard {
 
     private String graphicsMemory;
+    private String graphicsProcessor;
+    private String graphicsCard;
 
-    public PersonalComputer(String graphicsMemory) {
+    public PersonalComputer(String graphicsCard, String graphicsProcessor, String graphicsMemory) {
+        this.graphicsCard = graphicsCard;
+        this.graphicsProcessor = graphicsProcessor;
         this.graphicsMemory = graphicsMemory;
     }
 
@@ -32,9 +36,22 @@ public class PersonalComputer extends MainBoard implements IComputer, IGraphical
     }
 
     @Override
+    public void setGraphicsProcessor(String graphicsProcessor) {
+        this.graphicsProcessor = graphicsProcessor;
+    }
+
+    @Override
+    public void setGraphicsCard(String graphicsCard) {
+        this.graphicsCard = graphicsCard;
+    }
+
+    @Override
     public String getGraphicsMemory() {
         return graphicsMemory;
     }
 
+    public String getConfiguration() {
+        return getName() + " consists of :" + this.graphicsCard + " " + this.graphicsProcessor + " " + this.graphicsMemory;
+    }
 
 }
