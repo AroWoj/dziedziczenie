@@ -14,4 +14,9 @@ public class PersonalComputer extends MainBoard implements IComputer, IGraphical
     public String getGraphicsCard() {
         return "NVidia 1GB RAM Pro";
     }
+
+    @Override
+    public String getGraphicsProcessor() {
+        return "NVidia i7 Compact 512Bit";
+    }
 }
