@@ -1,7 +1,8 @@
-
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        PersonalComputer pc = new PersonalComputer();
+        PersonalComputer pc = new PersonalComputer("NVidia Pro", "Aruba Graphics", "4GB");
         System.out.println(pc.getName());
         System.out.println(pc.getProcessorType());
         System.out.println(pc.getMemoryCapacity());
@@ -9,5 +10,6 @@ public class Main {
         System.out.println(pc.getGraphicsProcessor());
         pc.setGraphicsMemory("1GB");
         System.out.println(pc.getGraphicsMemory());
+        System.out.println(pc.getConfiguration());
     }
 }

@@ -1,6 +1,8 @@
 public interface IGraphicalCard {
     String getGraphicsCard();
     String getGraphicsProcessor();
-    void setGraphicsMemory(String memory);
     String getGraphicsMemory();
+    void setGraphicsMemory(String memory);
+    void setGraphicsProcessor(String graphicsProcessor);
+    void setGraphicsCard(String graphicsCard);
 }
