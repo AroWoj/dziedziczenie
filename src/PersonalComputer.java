@@ -2,6 +2,10 @@ public class PersonalComputer extends MainBoard implements IComputer, IGraphical
 
     private String graphicsMemory;
 
+    public PersonalComputer() {
+        graphicsMemory = "4MB";
+    }
+
     public PersonalComputer(String graphicsMemory) {
         this.graphicsMemory = graphicsMemory;
     }
