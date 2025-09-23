@@ -1,5 +1,11 @@
 public class PersonalComputer extends MainBoard implements IComputer, IGraphicalCard {
 
+    private String graphicsMemory;
+
+    public PersonalComputer(String graphicsMemory) {
+        this.graphicsMemory = graphicsMemory;
+    }
+
     @Override
     public String getName() {
         return "Personal Computer";
@@ -19,4 +25,16 @@ public class PersonalComputer extends MainBoard implements IComputer, IGraphical
     public String getGraphicsProcessor() {
         return "NVidia Compact 512Bit";
     }
+
+    @Override
+    public void setGraphicsMemory(String memory) {
+        graphicsMemory = memory;
+    }
+
+    @Override
+    public String getGraphicsMemory() {
+        return graphicsMemory;
+    }
+
+
 }
