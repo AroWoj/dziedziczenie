@@ -1,4 +1,4 @@
-public class PersonalComputer extends MainBoard implements IComputer, IGraphicalCard {
+public class PersonalComputer extends MainBoard implements IComputer, IGraphicsCard {
 
     private String graphicsMemory;
     private String graphicsProcessor;

@@ -1,4 +1,4 @@
-public interface IGraphicalCard {
+public interface IGraphicsCard {
     String getGraphicsCard();
     String getGraphicsProcessor();
     String getGraphicsMemory();
